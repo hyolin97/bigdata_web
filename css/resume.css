@@ -1,7 +1,7 @@
 body {
   font-family: 'Open Sans', serif;
   padding-top: 54px;
-  color: #868e96;
+  color: brown;
 }
 
 @media (min-width: 992px) {
@@ -17,10 +17,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: 'Berlin Sans FB Demi', serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: #343a40;
+  color: gray;
 }
 
 h1 {
@@ -35,7 +35,7 @@ h2 {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: 'Berlin Sans FB Demi', serif;
   font-size: 1.35rem;
 }
 
@@ -131,7 +131,7 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #BD5D38 !important;
+  background-color: gray !important;
 }
 
 .text-primary {
