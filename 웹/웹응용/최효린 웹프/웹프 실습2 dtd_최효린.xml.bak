@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<!ELEMENT news (weather+)>
+
+<!ELEMENT weather (date_t,date_m,기온 , address)>
+
+<!ELEMENT 기온 	(#PCDATA )>
+
+<!ELEMENT address ( today, region, (city|gun|gu), (eup|myun|dong), street)>
+<!ELEMENT postal-code	(#PCDATA)>
+<!ELEMENT region	(#PCDATA)>
+<!ELEMENT city		(#PCDATA)>
+<!ELEMENT gu		(#PCDATA)>
+<!ELEMENT dong		(#PCDATA)>
+<!ELEMENT street	(#PCDATA)>
+<!ELEMENT ready		(#PCDATA)>
+
+<!ELEMENT xmlns CDATA	#REQUIRED>
+<!ATTLIST xmlns	CDATA	#REQUIRED>
+
+
+
+
+

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ </head>
+ <body>
+  <form method="GET" action="formexample2.php">
+ <?php
+ $name=$_GET["name"];
+ $college=$_GET["college"];
+ $age=$_GET["age"];
+ $subject=$GET["subject"];
+ ?>
+ 성명: <input type ="text" name="person"/><?php print name:$name;?><br>
+ 학과:<input type ="text" name="college"/><?php print $college;?><br>
+ 학년:<input type="radio" name="age" value="1학년"/>1학년
+     <input type="radio" name="age" value="2학년"/>2학년
+	 <input type="radio" name="age" value="3학년"/>3학년
+	 <input type="radio" name="age" value="4학년이상"/>4학년이상<?php print $age;?></br>
+ 과목:<input type="checkbox" name="subject" value="웹프로그래밍기초"/>웹프로그래밍기초
+     <input type="checkbox" name="subject" value="IT기술의 이해"/>IT기술의 이해
+	 <input type="checkbox" name="subject" value="UI/UX설계"/>UI/UX설계<?php print $subject;?><br>
+    
+    
+    
+    
+
+  
+ </body>
+</html>
+

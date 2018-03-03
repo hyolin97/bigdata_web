@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta charset="UTF-8"> <style type="text/css">
+  header {font-family:"Kunstler Script"; font-size:80pt;color:pink}
+   body {background-color:gray }
+   .pink { font-family:"휴먼편지체" ; font-size:10pt;color:black; text-align:left;display:block; width:20%; min-width:600px;height: 200px; border:thin dotted yellow;border-radius:10px;background-image:url(패션7.jpg)}
+   .ht{ font-family:"휴먼편지체" ; font-size:10pt;color:white; text-align:left;display:block; width:20%; min-width:600px;height: 105px; border:thick outset pink}
+   #vo {position: fixed; top:400px; left:700px}
+   #hu{position: fixed; top:100px; left:750px}
+   #ji{position: fixed; top:300px; left:900px}
+   #ko{position: fixed; top:30px; left:1000px}
+   #yu{position: fixed; top:100px; left:1100px}
+   #et{position: fixed; top:500px; left:500px}
+ </style> </head>
+ <body>
+  <header>fashion trend</header>
+   <form method="get" action="form_app.js">
+   <fieldset>
+   <legend>조사</legend>
+  성별:<input type="checkbox" name="d_type" value="남자">남자   <input type="checkbox" name="d_type" value="여자">여자<br>
+  패션트렌드를 확인하는 경로:<input type="radio" name="s_type" value="잡지" id="잡지"><label for="잡지">잡지</label>
+  <input type="radio" name="s_type" value="인터넷" id="인터넷"><label for="인터넷">인터넷</label>
+  </fieldset>
+  </form>  
+  <p class="pink" id="et"><br>전반적인 트렌드</br>
+  <br> 보통 트렌드는 연예인들을 시작으로 생겨납니다. 슬림핏이 몸매를 날씬하게 보정도 해주면서</br> <br>여성분들은 여성스러운 면을, 남성분들은 슬림한 면을 더 강조해주는 역할을 하여 유행했었는데요 최근들어</br>
+  <br>체형도 커버해주면서 털털한 매력을 부각시켜주는 오버핏 패션이 근 몇년간 꾸준히 사랑받아오고 있습니다.</br> <br>또한 롱패션이 유행하면서 전반적으로 키도 커보이고 늘씬해보이는 효과를 주는 패션이 유행하고 있습니다.</br>
+ </p> <ul>
+  <li><p class="ht">남성 패션트렌드
+  <br>최근 트렌드는 젠더리스라고 합니다. 남자와 여자의경계가 뚜렷하지 않은 것이지요.그래서 남성들 의류에는</br> <br>핑크색 등과 같이 기존에 여성들에게 많이 있던 색감이 많이 들어간 옷들이 많이 보입니다.</br>
+  <br>또한 개성들 훨씬 중요시하여 난방도 특이한 색상이나 무늬가 많이 들어간 옷들도 많이 강조되고있습니다.</br></p></li>
+  <li><p class="ht">여성 패션 트렌드
+  <br>여성들 사이에서는 로고가 크게 적힌 핸드백이 유행입니다. 과거에는 굉장히 고가의 브랜드 상품들 조차도</br>
+  <br>로고가 굉장히 작게 쓰여있거나 겉으로 잘 드러내지 않았는데요 최근들어서는 어느 브랜드나 로고를</br>
+  <br>굉장히 크게 프린트를 하고있으며 그에따른 색다른 매력을 뿜어내고있다고 합니다. </br></p></li>
+  <image src ="패션1.jpg" id="vo" width="150" height="200" ></image>
+  <image src ="패션2.JPEG" id="hu" width="200" height="300" ></image>
+  <image src ="패션3.jpg" id="ji" width="200" height="300" ></image>
+  <image src ="패션4.png" id="ko" width="300" height="300" ></image>
+  <image src ="패션5.jpg" id="yu" width="300" height="300" ></image>
+  </ul> <form method="get" action="form_app.js">
+  0.1mm<input type="range" min="1" max="5" value="3"/>0.5mm<br>
+  비고:<textarea name="explain" cols="20" rows="3">궁금한것을 쓰세요.</textarea>
+  </form>
+ </body>
+ </html>

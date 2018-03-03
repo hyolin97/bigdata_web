@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <style type="text/css">
+  p{ padding:10px;border:medium solid black}
+  </style>
+  <title>설문조사</title>
+ </head>
+ <body>
+ <form method="get" action="form_app.js">
+ <h3>설문조사</h3>
+ <p>성별과 나이를 입력하세요.<br>
+ 성별:<input type="radio" name="sex" value="male"/>남성
+ <input type="radio" name="sex" value="women"/>여성<br>
+ 나이:<input type="text" name="age"/><br></p>
+ <p>관심 분야를 선택하세요(1개 이상)<br>
+ <input type="checkbox" name="part" value="디지털 콘텐츠"/>디지털 콘텐츠
+ <input type="checkbox" name="part" value="웹프로그래밍기초"/>웹프로그래밍기초
+ <input type="checkbox" name="part" value="데이터베이스"/>데이터베이스
+ <input type="checkbox" name="part" value="전자출판"/>전자출판
+</p>
+<p>다음 문항에 대해 5점 척도롤 답하세요.<br>
+본 세미나의 주제는 만족스러운가?1<input type="range" min="1" max="5" />5 <br>
+본 세미나의 초청 강사는 만족스러운가?1<input type="range" min="1" max="5" />5 <br>
+본 세미나의 강의 시간은 적당한가?1<input type="range" min="1" max="5" />5 <br>
+</p>
+<p>기타 의견 사항<br>
+<textarea name="comments" rows="4" cols="40">의견을 적으세요.</textarea></p>
+<br><input type="submit" value="확인"/>
+	<input type="reset" value="취소"/></br>
+    
+    </form>
+
+
+  
+ </body>
+</html>

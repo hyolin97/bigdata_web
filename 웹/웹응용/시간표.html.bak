@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <head>
+  <style type="text/css">
+  #books {table-layout: auto;width:300px;background-color:skyblue; text align:center;}
+  #books caption {font-size:14pt; font-weight:bold; margin:0.5em}
+  #yellow { background-color:yellow;}
+  #green{ background-color:green;}
+  #pink {background-color: pink;}
+  #gray {background-color: gray;}
+  </style>
+ </head>
+ <body>
+  <table border="1" id="books">
+  <thead>
+  <tr id="gray">
+  
+  <th></th> <th >월</th><th>화</th><th>수</th><th>목</th><th>금</th>
+  </tr>
+  </thead>
+  <body>
+  <tr>
+  <td>1교시</td><td id="green">웹프로그래밍</td><td id="yellow">생활속식품이야기</td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+  <td>2교시</td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+  <td>3교시</td><td id="gray">법학개론</td><td></td><td id="yellow">생활속식품이야기</td><td></td><td></td>
+  </tr>
+  <tr>
+  <td>4교시</td><td></td><td id="green">웹프로그래밍</td><td></td><td id="pink">객체지향</td><td></td>
+  </tr>
+  <tr>
+  <td>5교시</td><td></td><td></td><td></td><td></td><td id="pink">객체 지향</td>
+  </tr>
+ </body>
+</html>

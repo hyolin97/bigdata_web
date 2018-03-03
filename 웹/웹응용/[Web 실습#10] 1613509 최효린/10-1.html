@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+ </head>
+ <body>
+ <canvas id="myCanvas" width="1000" height="1000"></canvas>
+ <script type="text/javascript">
+ var canvas =document.getElementById("myCanvas");
+ var myContext=canvas.getContext("2d");
+ myContext.beginPath();
+ myContext.arc(400,100,50,0,2*Math.PI);
+ myContext.lineWidth="10";
+ myContext.strokeStyle="red";
+ myContext.stroke();
+
+ myContext.beginPath();
+ myContext.arc(300,200,50,0,2*Math.PI);
+ myContext.lineWidth="10";
+ myContext.strokeStyle="green";
+ myContext.stroke();
+
+ myContext.beginPath();
+ myContext.arc(600,200,50,0,2*Math.PI);
+ myContext.lineWidth="10";
+ myContext.strokeStyle="yellow";
+ myContext.stroke();
+
+ myContext.beginPath();
+ myContext.arc(200,100,50,0,2*Math.PI);
+ myContext.lineWidth="10";
+ myContext.strokeStyle="black";
+ myContext.stroke();
+
+ myContext.beginPath();
+ myContext.arc(100,100,50,0,2*Math.PI);
+ myContext.lineWidth="10";
+ myContext.strokeStyle="blue";
+ myContext.stroke();
+
+
+ </script>
+  
+ </body>
+</html>

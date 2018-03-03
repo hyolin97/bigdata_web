@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="EUC-KR" ?>
+<!DOCTYPE list (list)>
+<!ELEMENT list	(sum-data+)>
+<!ELEMENT sum-data (date, title, reporter, link)>
+
+<!ELEMENT date	(#PCDATA)>
+
+<!ELEMENT title	(#PCDATA)>
+
+<!ELEMENT reporter	(#PCDATA)>
+
+<!ELEMENT link 	EMPTY>
+<!ATTLIST link 	href 	CDATA	#REQUIRED
+	preferred  (true|false) "false">

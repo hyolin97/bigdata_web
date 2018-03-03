@@ -1,0 +1,20 @@
+<HTML>
+<HEAD>
+<meta charset ="UTF-8">
+<Script language="Javascript">
+function xload0(filename)
+{
+    var xdoc = new ActiveXObject("Msxml.DOMDocument");
+    xdoc.async = false;
+    
+	xdoc.load(filename);
+	xdoc.load("newsda.xml");
+	var xroot= xdoc.documentElement;
+    alert("파일이름"+filename+"루트요소명"+xroot.nodeName);
+}
+</script>
+</HEAD>
+<BODY>
+<input type="button" value="문서읽기" onClick="xload0('newsda.xml');">
+</BODY>
+</HTML> 

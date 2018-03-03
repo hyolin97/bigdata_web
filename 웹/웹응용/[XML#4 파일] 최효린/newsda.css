@@ -1,0 +1,19 @@
+news-data{display:list-item; letter-spacing:0.8mm;
+border-style:dotted; border-color:maroon;background-color:pink}
+date,mod-date{ border-style:none;display:block;
+ padding:2px;font-size:10pt; color:white; display:block;}
+
+title{font-size:40pt;color:white;padding:5px;
+word-spacing:0.5mm;background-color:pink; 
+vertical-align:text-top;display:block; border-style:dotted; border-color:olive;}
+sub-title{font-size:25pt;color:white;padding:3px;
+vertical-align:text-top;border-color:white;
+display:block;border-style:inset;background-color:skyblue; }
+content{font-size:18pt;background-image:url(±Í¿±´«¼Û.gif); 
+background-repeat:no-repeat;padding:70px;text-align:center; 
+text-indent:4cm;background-color:white;display:block; 
+border-style:inset;background-color:skyblue;color:white;}
+reporter,email{ font-size:10pt; border-style:none; 
+padding:2px;color:white;vertical-align:text-bottom;display:block;}
+pic{display:block;}
+

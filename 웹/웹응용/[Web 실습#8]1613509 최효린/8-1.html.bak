@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+ 
+ 
+ </head>
+ <body>
+ <script type="text/javascript">
+ var a=prompt("첫번째수를 입력해주세요:");
+ var b=prompt("두번째 수를 입력해주세요.:");
+ var max=new max(a,b);
+ var min=new min(a,b);
+ if (a<b)
+ {
+	 
+	 document.write(max);
+	 
+
+ }
+ if (a>b)
+ {
+	 document.write(min);
+ }
+
+ 
+ 
+
+
+ </script>
+  
+ </body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<news>
+<weather>
+<date_t>9월 20일</date_t>
+
+<기온 xmlns="http://weather.naver.com/rgn/cityWetrCity.nhn?cityRgnCd=CT007007"/>
+<address>
+<today>21도</today>
+<region>서울시</region>
+<gu>용산구</gu>
+<dong>청파동 2가</dong>
+<street>53-12</street>
+</address>
+<ready>날씨가 추울것으로 예상되니 따뜻한 외투를 챙기시기바랍니다.</ready>
+
+
+</weather>
+
+<weather>
+<date_m>9월 21일</date_m>
+<기온 xmlns="http://weather.naver.com/rgn/cityWetrMain.nhn"/>
+<address preferred="true"> 충북 천안시 불암동 56-01</address>
+
+</weather>
+</news>

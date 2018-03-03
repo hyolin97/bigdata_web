@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet   type="text/xsl" 
+                          href="data.xsl"?>
+<!-- 뉴스 목록 -->
+
+<list>
+   <news>
+		<title href = "http://mm.sookmyung.ac.kr/~it1614580/news1_complex.xml"> "의사 반발에 밀려 의료증명서 비용 두세 배로" </title>
+		<picture href="news1.jpg">
+			<pic-comment copyright="중앙포토"> 
+			한 사망자의 유족이 고인의 사망진단서를 보고 있다. 
+			</pic-comment>
+		</picture>
+        
+	<press>
+		<date>
+			<year 단위="년"> 2017 </year>
+			<month 단위="월"> 9 </month>
+			<day 단위="일"> 20 </day>
+		</date>
+</press>
+		<reporter-name> 신성식 </reporter-name>
+
+	</news>
+
+    <news>
+
+		<title href = "http://mm.sookmyung.ac.kr/~it1614580/news2_complex.xml"> "안면지루성피부염, 원인은 열성피지? 순환장애 개선해 치료" </title>
+
+		<picture href="news2.jpg">	
+		</picture>
+	  <press>
+		
+		<date>
+			<year 단위="년"> 2017 </year>
+			<month 단위="월"> 9 </month>
+			<day 단위="일"> 19 </day>
+		</date>
+		</press>
+
+		<reporter-name> 김지환</reporter-name>
+
+	</news>
+	   
+	   
+	<news>
+		<title href = "http://mm.sookmyung.ac.kr/~it1613509/web%20%EC%9D%91%EC%9A%A9/%EC%9B%B9%ED%94%84%20%EC%8B%A4%EC%8A%B54(4)_%EC%B5%9C%ED%9A%A8%EB%A6%B0.xml"> "'공백·승리·히딩크'…유럽원정 나선 신태용호의 '3대 과제'"</title>
+		
+		<picture href="news3.jpg">
+		</picture>
+		
+ 
+		<press>
+		<date>
+			<year 단위="년"> 2017 </year>
+			<month 단위="월"> 10 </month>
+			<day 단위="일"> 3 </day>
+		</date>
+</press>
+		<reporter-name> 하사헌</reporter-name>
+
+	</news>
+		
+	<news>
+		<title href = "http://mm.sookmyung.ac.kr/~it1613509/web%20%EC%9D%91%EC%9A%A9/%EC%9B%B9%ED%94%84%20%EC%8B%A4%EC%8A%B5%204(3)%EC%B5%9C%ED%9A%A8%EB%A6%B0.xml"> "굿바이 이승엽, ‘홈런왕’답게 떠났다"</title>
+
+		<picture href="news4.jpg">
+		</picture>
+	
+	<press>
+		<date>
+			<year 단위="년"> 2017 </year>
+			<month 단위="월"> 10 </month>
+			<day 단위="일"> 10 </day>
+		</date>
+</press>
+		<reporter-name> 하사헌</reporter-name>
+
+	</news>
+	
+	<news>
+
+		<title href = "http://mm.sookmyung.ac.kr/~it1212219/JEHome/eun1_final.xml"> "군면제 상상 못해"..서인국의 진심, 논란 잠재울까"</title>
+
+		<picture href=" news5.jpg">
+		</picture>
+<press>
+		<date>
+			<year 단위="년"> 2017 </year>
+			<month 단위="월"> 10 </month>
+			<day 단위="일"> 5 </day>
+		</date>
+</press>
+		<reporter-name> 김가영 </reporter-name>
+
+	</news>
+		
+	<news>
+		<title href = "http://mm.sookmyung.ac.kr/~it1212219/JEHome/eun2_final.xml"> "전지윤 "포미닛 해체하고 더 애틋해졌다" [인터뷰]"</title>
+
+		<picture href="news6.jpg">
+		</picture>
+		
+<press>
+		<date>
+			<year 단위="년"> 2017 </year>
+			<month 단위="월"> 10 </month>
+			<day 단위="일"> 5 </day>
+		</date>
+</press>
+		<reporter-name> 김예나 </reporter-name>
+	</news>
+
+	<news>
+
+		<title href = "http://mm.sookmyung.ac.kr/~it1610857/final_1.xml"> "SW교육 의무화 시행 1년, 핀란드 교육 현장은?" </title>
+
+		<picture href= "news7.jpg"> </picture> 
+		
+
+<press>
+		<date>
+			<year 단위="년"> 2017 </year>
+			<month 단위="월"> 9 </month>
+			<day 단위="일"> 19 </day>
+		</date>
+</press>
+		<reporter-name> 김지선 </reporter-name>
+    
+	</news>
+		
+	<news>
+		<title href = "http://mm.sookmyung.ac.kr/~it1610857/final_2.xml"> "새 정부, `SW중심대학` 사업 지속 추진?" </title>
+
+		<picture href= "news8.jpg"> </picture>
+	<press>	
+		<date>
+			<year 단위="년"> 2017 </year>
+			<month 단위="월"> 9 </month>
+			<day 단위="일"> 19 </day>
+		</date>
+	</press>	
+		<reporter-name> 박종진 </reporter-name>
+	</news>
+</list>

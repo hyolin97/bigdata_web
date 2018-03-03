@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  
+ </head>
+ <body>
+  <canvas id="myCanvas" width="1000" height="1000"></canvas>
+ <script type="text/javascript">
+ var canvas =document.getElementById("myCanvas");
+ var myContext=canvas.getContext("2d");
+ myContext.beginPath();
+ myContext.arc(700,700,200,1*Math.PI,2*Math.PI);
+ myContext.lineWidth=30;
+ myContext.strokeStyle="red";
+ myContext.stroke();
+
+ myContext.beginPath();
+ myContext.arc(700,700,170,1*Math.PI,2*Math.PI);
+ myContext.lineWidth=30;
+ myContext.strokeStyle="orange";
+ myContext.stroke();
+
+ myContext.beginPath();
+ myContext.arc(700,700,140,1*Math.PI,2*Math.PI);
+ myContext.lineWidth=30;
+ myContext.strokeStyle="yellow";
+ myContext.stroke();
+
+ myContext.beginPath();
+ myContext.arc(700,700,110,1*Math.PI,2*Math.PI);
+ myContext.lineWidth=30;
+ myContext.strokeStyle="green";
+ myContext.stroke();
+
+ myContext.beginPath();
+ myContext.arc(700,700,80,1*Math.PI,2*Math.PI);
+ myContext.lineWidth=30;
+ myContext.strokeStyle="skyblue";
+ myContext.stroke();
+
+ myContext.beginPath();
+ myContext.arc(700,700,50,1*Math.PI,2*Math.PI);
+ myContext.lineWidth=30;
+ myContext.strokeStyle="blue";
+ myContext.stroke();
+
+ myContext.beginPath();
+ myContext.arc(700,700,20,1*Math.PI,2*Math.PI);
+ myContext.lineWidth=30;
+ myContext.strokeStyle="purple";
+ myContext.stroke();
+ </script>
+ </body>
+</html>

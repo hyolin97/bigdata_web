@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+ </head>
+ <body>
+ <canvas id="myCanvas" width="1000" height="1000"></canvas>
+ <script type="text/javascript">
+ var canvas=document.getElementById("myCanvas");
+ var myContext=canvas.getContext("2d");
+ var imgObj=new Image();
+ imgObj.src="clownfish.jpg";
+ imgObj.onload=function(){
+	 myContext.drawImage(imgObj,120,120,350,350,50,50,350,350);
+	 myContext.drawImage(imgObj,120,120,350,900,400,50,350,350);
+	 myContext.drawImage(imgObj,120,120,350,350,750,50,350,350);
+	 myContext.drawImage(imgObj,120,120,350,350,50,400,350,350);
+	 myContext.drawImage(imgObj,120,120,350,350,400,400,350,350);
+	 myContext.drawImage(imgObj,120,120,350,350,750,400,350,350);
+	 
+ }
+		  
+
+
+ </script>
+  
+ </body>
+</html>

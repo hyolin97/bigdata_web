@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+</head>
+ <body>
+  <button id="b1" onclick="onclick_innerHTML">버튼</button>
+  <p id="text" >This text will be dynamically changed</p>
+  <script type ="text/javascript">
+  var newValue=prompt("입력:");
+  document.write(newValue);
+  document.getElementById("b1").onclick=onclick_innerHTML;
+  function onclick_innerHTML(){
+	  document.getElementById("text").innerHTML="<h1>Mouse click Event</h1>";
+  }
+  </script>
+ </body>
+</html>

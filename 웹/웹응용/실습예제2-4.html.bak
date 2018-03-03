@@ -1,0 +1,18 @@
+<!doctype html>
+ <head>
+ </head>
+ <body>
+ <h3> 고양이 사진 </h3>
+
+ <ol>
+ <li>음악듣기</li>
+ <ul>
+ <li><iframe src=" http://mm.sookmyung.ac.kr/~sblim/lec/web-int/data/lucky1.jpg " width="560" height="315"></iframe</li></ul>
+ <ul>
+ <li> <iframe src="http://mm.sookmyung.ac.kr/~sblim/lec/web-int/data/lucky2.jpg" width="560" height="315"> </iframe> </li>
+ </ul>
+  <ul>
+  <li><iframe src="http://mm.sookmyung.ac.kr/~sblim/lec/web-int/data/lucky3.jpg" width="560"height="315"></iframe></li></ul>
+  
+ </body>
+</html>

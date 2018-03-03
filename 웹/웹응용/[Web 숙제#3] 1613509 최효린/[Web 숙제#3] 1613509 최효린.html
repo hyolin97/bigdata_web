@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+
+  header { position:relative; font-family:"Kunstler Script"; font-size:80pt; color:#800080; text-shadow:10px 10px grey}
+  body {background-color:#FF8080 }
+  .white {font-family:"휴먼편지체" ; font-size:15pt;color:white;text-align:left}
+  #po{width:20%; min-width:100px;height: 55px; border:thick dotted white}
+  #hi{position: fixed; top:50px; left:570px; font-size:12pt;color:white;font-family:"휴먼편지체"}
+  #me{position: fixed; top:300px; left:570px; font-size:12pt;color:white;font-family:"휴먼편지체"}
+  #hu{position: fixed; top:460px; left:570px; font-size:12pt;color:white;font-family:"휴먼편지체";width:35%; min-width:50px;height: 185px; border:medium double white}
+  #mt{position: fixed; top:400px; left:1200px}
+   </style>
+</head>
+<body>
+ <header>hyolin's story</header>
+ <form action="평가.php" method="get">
+  제 홈페이지를 평가해주세요:
+  <label><input type="checkbox" name="val" value="high">상</label>
+ <label><input type="checkbox" name="val" value="middle">중</label>
+ <label><input type="checkbox" name="val" value="low">하</label>
+ <input type="submit" value="제출"><br>
+ </form>
+ 선호하는 내 취미:
+ <script type ="text/javascript">
+ alert("제취미를 소개하는 페이지 입니다.");
+ var n=prompt("원하는 정보:","자전거와 디자인 중애서 고르시오.");
+ document.write("Answer="+n+"<br/>");
+
+ </script>
+ 
+ 
+  <ul id="po" >
+  <li class="white"><strong><a href="bicycle.html">  자전거 타고 야경 구경하기 </a></strong></li>
+  <li class="white"><strong><a href="fash.html">패션 트렌드 확인하기</a></strong></li>
+  </ul>
+  
+  <p id="hi"><br> &raquo;내 취미</br><br>자전거는 제가 제일 좋아하면서 잘하는 운동중하나입니다. 아무 생각없이 혼자 저만의 시간을 갖으며</br>
+  <br>탈 수도 있고 남자친구와의 친밀도를 높여주기도 하는 운동입니다.저는 자전거를 타고 야경을 보러다니는 데에 </br>
+  <br>시간을 많이 할애하여 제자신에게 힐링이되는 시간을 만드는 것을 좋아합니다. 야경들을 보면 왠지</br>
+  <br> 세상을 보는 시야가 넓어지는 느낌이 들고 잠시 나마 바쁜 일상속에서 벗어나 여유를 즐길수있게 해줍니다.</br>
+   <br>저는 한강이나 청계천 같은 물가를 주로 자전거를 이용하여 여가생활을 즐깁니다.</br></p>
+   <p id="me">
+   <br> &raquo;내 취미</br>
+    <br>산업디자인 쪽에 관심이 많은 저는 디자인 트렌드를 확인하여 그에 맡게 옷을 코디하거나</br>
+    <br>로고를 코디하는 것에 관심이 많습니다. 옷쇼핑을 하면서 트렌드에 관심을 갖기 시작하다가</br>
+	<br>점차 브랜드 로고들에 눈이 가서 잡지로도 많이 찾아보며 보는 눈을 키우고있습니다.</br></p>
+	<p id="hu">
+	<br> &raquo;앞으로 취미로 하고싶은 것</br>
+	<br>대외 활동으로 봉사활동을 하고싶습니다. 고등학교 때까지는 공부를 해야해서 봉사는 </br>
+	<br>뒷전이었으나 여유가 있을때 학생들과 지식도 나누어보고 싶고, 제가 알지 못하는</br>
+	<br>어려운 이웃들에게도 조금 이나마 도움이 되어보고 싶습니다.</br></p>
+	
+  <image src="내사진2.jpg" width="500" height="400"></image>
+ <iframe src ="눈송이.gif" id="mt" width="200" height="200" ></iframe>
+ 
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+  <HTML>
+  <head>
+  <style type="text/css">
+   body {background-color:sky-blue }
+  h3{background-image:url(蓖勘传价.gif);background-repeat:no-repeat}
+ 
+  </style></head>
+    <BODY>  
+     
+  <h1><font size="60" color="sky-blue" style="background-color:yellow"><xsl:value-of select="news-data/title"/></font>
+  <table border="1">
+     <tr>
+        
+        <td><b> 楷抗</b></td>
+        <td bgcolor="blue"><b> 胶器明</b></td>
+        <td><b> 版力</b></td>
+     </tr>
+
+     </table></h1> 
+	 
+  <h2><font size="20" color="pink" ><xsl:value-of select="news/title"/></font>
+   </h2><h3><figure><img src="蓖勘传价.gif"/></figure></h3>
+ <p> <font size="3" color="gray" ><xsl:value-of select="news/date"/></font></p>
+ <p><table border="1"><tr><td><font size="6.7" color="pink"><xsl:value-of select="news/picture"/></font></td></tr></table>
+  </p>
+  <p><font size="3" color="gray"><xsl:value-of select="news-data/reporter-name"/></font></p>
+    </BODY>
+  </HTML>
+</xsl:template>
+
+</xsl:stylesheet>

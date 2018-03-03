@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+
+<bags>
+<bag id="100">
+<name> 에코백</name>
+<kind>에코백 종류</kind>
+<color xmlns="http://storefarm.naver.com/shutat/products/653083207" >색상:흰색/검은색</color>
+<![CDATA[
+스타일:<<지퍼타입>>
+      <<버튼타입>>
+	 <<열개형타입>>
+]]>
+
+</bag>
+</bags>

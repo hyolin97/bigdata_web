@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<!ELEMENT 제품(모델명,회사,가격,날짜, 색상,보증기간,기능)>
+<!ELEMENT 모델명(#PCDATA)>
+<!ELEMENT 회사(#PCDATA)>
+<!ELEMENT 가격(원가,판매가)>
+<!ATTLIST 가격 단위 CDATA #IMPLIED>
+<!ELEMENT 원가 (#PDATA)>
+<!ELEMENT 판매가 (#PCDATA)>
+<!ELEMENT 날짜(년도,월,일)>
+<!ELEMENT 년도(#PCDATA)>
+<!ELEMENT 월(#PCDATA)>
+<!ELEMENT 일(#PCDATA)>
+<!ELEMENT 색상(#PCDATA)>
+<!ELEMENT 보증기간(#PCDATA)>
+<!ELEMENT 기능(#PCDATA)>
+
+<제품목록>
+<제품>
+<모델명> J001</모델명>

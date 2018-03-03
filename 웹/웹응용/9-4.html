@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+ </head>
+ 
+ <body>
+   <script type="text/javascript">
+   
+   document.getElementById("text").onclick = cl;
+   function cl(){
+      var a = prompt("버튼에 입력:", "");
+      document.getElementById("text").value = a;
+   }
+   </script>
+<form>
+      <input type="button" id="text" value="버튼" onclick="cl()">
+   </form>
+</body>
+</html>

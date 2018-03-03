@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<!ELEMENT bags (bag+)>
+
+<!ELEMENT bag ( name ,color, kind)>
+
+<!ELEMENT 기온 	(#PCDATA )>
+
+
+<!ELEMENT name	(#PCDATA)>
+<!ELEMENT color	(#PCDATA)>
+<!ELEMENT kind	(#PCDATA)>
+
+
+<!ELEMENT xmlns CDATA	#REQUIRED>
+<!ATTLIST xmlns	CDATA	#REQUIRED>

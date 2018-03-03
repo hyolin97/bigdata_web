@@ -1,0 +1,23 @@
+
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+   
+ </head>
+ <body >
+ <div id="outerBox" style="background:red;">
+ <div id="innerBox" style="background:blue;">
+</div>
+</div>
+ <script type="text/javascript">
+ 
+ function changeColor(id,color){
+	 document.getElementById(id).style.background=color;
+ }
+ </script>
+ 
+ 
+ <button onclick="changeColor('outerBox','red');">Red</button>
+ <button onclick="changeColor('innerBox','blue');">Blue</button>
+ </body>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+ 
+  body {background-color:#FF8080 }
+ h1{color:white;}
+   </style>
+   <Script language="Javascript">
+   
+
+	 var xsltree, ex_rootNode,xdoc, rootNode, num, allnum ;
+	 var nu_news = 0;	
+
+        function xload(filename) 
+        {
+			xdoc = new ActiveXObject("Msxml.DOMDocument");
+			xdoc.async = false;
+			xdoc.load(filename);
+			rootNode = xdoc.documentElement;
+
+			xsltree = new ActiveXObject("Msxml.DOMDocument");
+			xsltree.async = false;
+			xsltree.load("data.xsl");
+			alert("로드 성공!");
+			num = 0;
+			var nlist = xdoc.getElementsByTagName("news");
+			allnum = nlist.length;
+			NewsNO(0);
+			}
+			
+		
+		function All(){
+		
+			
+			var newstable = document.getElementById('DIV');
+			newstable.innerHTML = xdoc.transformNode(xsltree);
+		}
+
+		function NewsNO(nnum){	
+            
+			nu_news = 0;
+			var NO_table = document.getElementById('NOTD');
+			var nlist = xdoc.getElementsByTagName("news");
+						
+			if (nnum == allnum)
+			{
+				num = allnum-1;
+			}
+			if (nnum != allnum && nnum >= 0)
+			{
+				num = nnum;
+			}
+			NOTD.innerText=rootNode.childNodes[num].xml;
+			
+			var nu_num = document.getElementById('news_num');
+			var all_news_num = document.getElementById('all_news_num');
+
+			nu_num.innerText = num+1;
+			all_news_num.innerText = allnum;
+		
+			
+			var edit_title = document.getElementById('m_title');
+			edit_title.value = nlist[num].selectSingleNode("title").text;
+
+
+			var edit_picture = document.getElementById('m_picture');
+			edit_picture.value = nlist[num].selectSingleNode("picture").getAttribute("href");
+
+			var edit_year_id = document.getElementById('m_year_id');
+			edit_year_id.value = nlist[num].selectSingleNode("press").selectSingleNode("date").selectSingleNode("year").text;
+
+			var edit_month_id = document.getElementById('m_month_id');
+			edit_month_id.value = nlist[num].selectSingleNode("press").selectSingleNode("date").selectSingleNode("month").text;
+
+			var edit_day_id = document.getElementById('m_day_id');
+			edit_day_id.value = nlist[num].selectSingleNode("press").selectSingleNode("date").selectSingleNode("day").text;
+
+			var edit_reportername = document.getElementById('m_reportername');
+			edit_reportername.value = nlist[num].selectSingleNode("reporter-name").text;
+		}
+		
+		function Make(){		
+			nu_news = 1;
+			var news_num = document.getElementById('news_num');
+			news_num.innerText = "?";
+			var edit_title = document.getElementById('m_title');
+			edit_title.value = "";
+
+			
+
+			var edit_picture = document.getElementById('m_picture');
+			edit_picture.value = "";
+			
+			var edit_year_id = document.getElementById('m_year_id');
+			edit_year_id.value = "";
+
+			var edit_month_id = document.getElementById('m_month_id');
+			edit_month_id.value = "";
+
+			var edit_day_id = document.getElementById('m_day_id');
+			edit_day_id.value = "";
+
+			var edit_reportername = document.getElementById('m_reportername');
+			edit_reportername.value = "";
+		}
+		function Save(){
+			if(nu_news == 1){
+				allnum = allnum+1;
+				rootNode.appendChild(ex_rootNode);
+				NewsNO(allnum-1);
+			}else{
+				var nlist = xdoc.getElementsByTagName("news"); 
+				rootNode.removeChild(nlist[num]);
+				rootNode.insertBefore(ex_rootNode, nlist[num]);
+				
+			}
+		}
+
+		function NONews_Make(nnum){
+				N_doc =  new ActiveXObject("Msxml.DOMDocument");
+				N_doc.async = false;
+				N_rootNode = N_doc.createElement("news");
+				var N_title = N_doc.createElement("title");
+				var N_title_text = N_doc.createTextNode(document.getElementById('m_title').value);
+				N_title.appendChild(N_title_text);
+						
+				var N_img = N_doc.createElement("picture");
+				var N_pic =  document.getElementById('m_picture').value;
+				N_img.setAttribute('href', N_pic);
+		
+				var N_press = N_doc.createElement("press");
+				var N_year = N_doc.createElement("year");
+				var N_date = N_doc.createElement("date");
+				var N_year_text = N_doc.createTextNode(document.getElementById('m_year_id').value);
+				N_year.appendChild(N_year_text);
+
+				var N_month = N_doc.createElement("month");
+				var N_month_text = N_doc.createTextNode(document.getElementById('m_month_id').value);
+				N_month.appendChild(N_month_text);
+				
+				var N_day = N_doc.createElement("day");
+				var N_day_text = N_doc.createTextNode(document.getElementById('m_day_id').value);
+				N_day.appendChild(N_day_text);			
+				
+				var N_reportername = N_doc.createElement("reporter-name");
+				var N_reportername_text = N_doc.createTextNode(document.getElementById('m_reportername').value);
+				N_reportername.appendChild(N_reportername_text);
+				N_doc.appendChild(N_rootNode);
+				N_rootNode.appendChild(N_press);
+				N_press.appendChild(N_date);
+				N_press.appendChild(N_reportername);
+				N_date.appendChild(N_year);
+				N_date.appendChild(N_month);
+				N_date.appendChild(N_day);
+				N_rootNode.appendChild(N_picture);
+				N_rootNode.appendChild(N_title);
+
+				var NO_table = document.getElementById('NOTD');
+				NO_table.innerText=N_doc.xml;
+		}
+		function Search(){
+			var s_xdoc = new ActiveXObject("Msxml.DOMDocument");
+			s_xdoc.async = false;
+			s_rootNode = s_xdoc.createElement("list");
+			s_xdoc.appendChild(s_rootNode);
+			var titles = document.getElementById("titles");
+			var dates = document.getElementById('dates');
+			
+			
+			var n = xdoc.getElementsByTagName("news");
+
+			var y= xdoc.getElementsByTagName("year");
+			var m= xdoc.getElementsByTagName("month");
+			var d= xdoc.getElementsByTagName("day");
+			
+			var da = [];
+
+			var ti= xdoc.getElementsByTagName("title");
+			var num = 0;
+						
+		 	var ti_list = [];
+			var year = document.getElementById("year_id").value;
+			var month = document.getElementById("month_id").value;
+			var day = document.getElementById("day_id").value;
+			var title = document.getElementById("title").value;
+			if (titles.checked == true){
+				num = 0;
+				for (i = 0 ; i < da.length;i++ ){
+					if(ti[da[i]].text == title){
+						ti_list[num] = da[i];
+						
+					}
+					num = num+1;
+				}
+
+			}
+
+			if (dates.checked == true){
+				for (i = 0 ; i < y.length; i++){
+					if (y.item(i).text == year){
+						if (m.item(i).text == month){
+							if (d.item(i).text == day){
+								da[num] = i;
+								if(titles.checked == false){
+										ti_list[num] = i;
+									}
+								
+								
+								num = num+ 1;
+							}
+						}
+					}
+				}
+			}
+			if (dates.checked == false){
+				for (i = 0;i < n.length; i++){
+					da[i] = i;
+					
+						if(titles.checked == false){
+							ti_list[i] = i;
+						}
+					
+				}
+			}
+			
+
+			if (titles.checked == true){
+				num = 0;
+				for (i = 0 ; i < da.length;i++ ){
+					if(ti[da[i]].text == title){
+						ti_list[num] = da[i];
+						
+					}
+					num = num+1;
+				}
+
+			}
+
+
+			var result = "";
+			for (i = 0;i <ti_list.length ;i++)
+			{
+				var s_node = rootNode.childNodes[ti_list[i]].cloneNode(true);
+				s_rootNode.appendChild(s_node);
+			}
+
+			var newstable = document.getElementById('DIV');
+			newstable.innerHTML = s_xdoc.transformNode(xsltree);
+			}
+
+
+</Script>  
+</HEAD>
+<BODY>
+<h1><center>효린 뉴스 기사 검색/편집기</center></h1>
+<center><br/><br/>
+<table border = "0">
+	<tr>
+		<td style = "background-color :#FFD8D8 ;border-style:inset; border-color:gray;padding : 15px ;margin : 20px;position : relative; border-top-left-radius : 30px;"><br/>
+		뉴스 검색화면<br/>
+		<input type = "button"  value=" 파일로드" align = "right" onclick = "xload('newsda.xml')"/>
+			<br/><br/><br/>
+			<input type = "checkbox" id = "dates"/> 날짜 : 
+			<input type = "text" size = "5" list = "year" id = "year_id"/>
+			<datalist id = "year">
+				<option value = "2011"/>
+				<option value = "2012"/>
+				<option value = "2013"/>
+				<option value = "2014"/>
+				<option value = "2015"/>
+				<option value = "2016"/>
+				<option value = "2017"/>
+			</datalist>년
+			<input type = "text" size = "3" list = "month" id = "month_id"/>
+			<datalist id = "month">
+				<option value = "01"/>
+				<option value = "02"/>
+				<option value = "03"/>
+				<option value = "04"/>
+				<option value = "05"/>
+				<option value = "06"/>
+				<option value = "07"/>
+				<option value = "08"/>
+				<option value = "09"/>
+				<option value = "10"/>
+				<option value = "11"/>
+				<option value = "12"/>
+			</datalist>월
+			<input type = "text" size = "3" list = "day" id = "day_id"/>
+			<datalist id = "day">
+				<option value = "1"/>
+				<option value = "2"/>
+				<option value = "3"/>
+				<option value = "4"/>
+				<option value = "5"/>
+				<option value = "6"/>
+				<option value = "7"/>
+				<option value = "8"/>
+				<option value = "9"/>
+				<option value = "10"/>
+				<option value = "11"/>
+				<option value = "12"/>
+				<option value = "13"/>
+				<option value = "14"/>
+				<option value = "15"/>
+				<option value = "16"/>
+				<option value = "17"/>
+				<option value = "18"/>
+				<option value = "19"/>
+				<option value = "20"/>
+				<option value = "21"/>
+				<option value = "22"/>
+				<option value = "23"/>
+				<option value = "24"/>
+				<option value = "25"/>
+				<option value = "26"/>
+				<option value = "27"/>
+				<option value = "28"/>
+				<option value = "29"/>
+				<option value = "30"/>
+				<option value = "31"/>
+			</datalist>일
+
+			
+			
+
+			<br/><br/>
+			<input type = "checkbox" id = "titles"/> 제목 :
+			<input type = "text" value = "title" id = "title"/>
+
+			<br/><br/>
+			<input type = "button" value="검색하기" onclick = "Search()"><br/><br/>
+			<input type = "button" value="전체보기"  onclick = "All()"><br/><br/>
+			<input type = "button" value ="신규작성"  onclick = "Make()">
+			
+		</td>
+		<td style = "background-color : gray; border-color:gray;padding : 15px ;margin : 20px; border-style:inset;position : relative; border-top-right-radius : 30px;" >
+		<div id = "DIV" style = "color:white;border-color:gray; height : 300px ; width : 900px; border-style:inset;overflow : scroll;background-color : #FFD8D8 ;  padding : 10px ;margin : 10px;border-top-right-radius : 30px;"></div>
+		</td>
+	</tr>
+	
+	<tr>
+		<td style = "background-color : #FFD8D8; border-color:gray;border-style:inset; padding : 5px ; position : relative; border-bottom-left-radius : 30px;"  id = "mTD">
+         뉴스 편집화면<br/>
+		 기사 번호 : <span id = "news_num"></span> / <span id = "all_news_num"></span>
+			<div style = "background-color : #FFD8D8 ;border-color:gray; padding : 10px ;margin : 10px; position : relative; border-bottom-left-radius : 30px;">
+				<div >
+				<input type = "button" value ="처음" onclick = "NewsNO(0)">
+				<input type = "button" value="뒤로" onclick = "NewsNO(num-1)">
+				<input type = "button" value ="다음" onclick = "NewsNO(num+1)">
+				<input type = "button" value ="마지막" onclick = "NewsNO(allnum)"></div>
+				<br/>			
+				제목 : <input type = "textarea" size = "28" id = "m_title"/><br/><br/>
+						
+						
+				날짜 : <input type = "textarea" size = "5" list = "m_year" id = "m_year_id"/>
+				<datalist id = "m_year">
+					<option value = "2011"/>
+					<option value = "2012"/>
+					<option value = "2013"/>
+					<option value = "2014"/>
+					<option value = "2015"/>
+					<option value = "2016"/>
+					<option value = "2017"/>
+				</datalist>년
+				<input type = "text" size = "3" list = "m_month" id = "m_month_id"/>
+				<datalist id = "m_month">
+					<option value = "01"/>
+					<option value = "02"/>
+					<option value = "03"/>
+					<option value = "04"/>
+					<option value = "05"/>
+					<option value = "06"/>
+					<option value = "07"/>
+					<option value = "08"/>
+					<option value = "09"/>
+					<option value = "10"/>
+					<option value = "11"/>
+					<option value = "12"/>
+				</datalist>월
+				<input type = "text" size = "3" list = "m_day" id = "m_day_id"/>
+				<datalist id = "m_day">
+					<option value = "1"/>
+					<option value = "2"/>
+					<option value = "3"/>
+					<option value = "4"/>
+					<option value = "5"/>
+					<option value = "6"/>
+					<option value = "7"/>
+					<option value = "8"/>
+					<option value = "9"/>
+					<option value = "10"/>
+					<option value = "11"/>
+					<option value = "12"/>
+					<option value = "13"/>
+					<option value = "14"/>
+					<option value = "15"/>
+					<option value = "16"/>
+					<option value = "17"/>
+					<option value = "18"/>
+					<option value = "19"/>
+					<option value = "20"/>
+					<option value = "21"/>
+					<option value = "22"/>
+					<option value = "23"/>
+					<option value = "24"/>
+					<option value = "25"/>
+					<option value = "26"/>
+					<option value = "27"/>
+					<option value = "28"/>
+					<option value = "29"/>
+					<option value = "30"/>
+					<option value = "31"/>
+				</datalist>일<br/><br/>
+				사진 : <input type = "textarea" size = "25" id = "m_picture"/><br/><br/>
+				기자 : <input type = "textarea" size = "28" id = "m_reportername"/><br/><br/>
+
+				<input type = "button" value ="미리보기" onclick = "NONews_Make(num)"> 
+				<input type = "button" value="저장" onclick = "Save()"><br/><br/>
+		</td>
+		<td style = "background-color : gray; color:white;border-color:gray; padding : 15px ;margin : 20px;border-style:inset; position : relative;border-bottom-right-radius:30px;">
+		<div id = "NOTD" style = "width : 900px;border-color:gray;background-color : #FFD8D8 ; border-style:inset; padding : 10px ;border-bottom-right-radius:30px;margin : 10px;height : 300px ;"></div></td>
+	</tr>
+
+
+</table>
+</center>
+
+</BODY>
+</HTML>

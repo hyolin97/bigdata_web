@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  </head>
+ <body>
+ <script type="text/javascript">
+ var today=new Date();
+ var a=today.getMonth()+1;
+ var d=today.getDate();
+ var y=today.getDay();
+ if (y==1)
+ {
+	 document.write("Monday");
+ }
+ if (y==2)
+ {
+	 document.write("Tuesday");
+ }
+ if (y==3)
+ {
+	 document.write("Wednesday"+"<br>");
+
+ }
+ if (y==4)
+ {
+	 document.write("Tuesday");
+ }
+ document.write(a+"월");
+ document.write(d);
+
+ </script>
+  
+ </body>
+</html>

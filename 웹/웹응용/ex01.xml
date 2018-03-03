@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+
+<?xml-stylesheet type="text/xsl" href="ex01.xsl"?>
+<memo>
+   <header> 
+      <date> 2002. 4. 15. </date>
+        <name lang="kr"> 홍길동 </name>
+   </header> 
+   <body>
+      <p> XML 규격제정을 위한 회의가 있으니 참석하여 주시기 바랍니다. </p>
+      <p> 회의 참석 여부를 알려 주시기 바랍니다. </p>
+   </body>
+</memo>

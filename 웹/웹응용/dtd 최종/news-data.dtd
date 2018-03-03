@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="EUC-KR" ?>
+<!DOCTYPE  news-data (news-data)>
+<!ELEMENT news-data (date+, category, title+, pic*, content, reporter*, email*, link*)>
+
+<!ELEMENT date	(mod-date+)>
+<!ELEMENT mod-date	(#PCDATA)>
+
+<!ELEMENT category	(#PCDATA)>
+
+<!ELEMENT title	(sub-title+)>
+<!ELEMENT sub-title	(#PCDATA)>
+
+<!ELEMENT pic 	EMPTY>
+<!ATTLIST pic 	img 	CDATA	#REQUIRED>
+
+<!ELEMENT content	(#PCDATA)>
+
+<!ELEMENT reporter 	(#PCDATA)>
+<!ATTLIST reporter 	preferred (true|false) "false">
+
+<!ELEMENT email 	EMPTY>
+<!ATTLIST email 	href 	CDATA	#REQUIRED
+	preferred  (true|false) "false">
+
+<!ELEMENT link 	EMPTY>
+<!ATTLIST link 	href 	CDATA	#REQUIRED
+	preferred  (true|false) "false">

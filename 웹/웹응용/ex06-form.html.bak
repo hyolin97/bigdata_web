@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+</head>
+ <body>
+ <h2>웹 서버 확이</h2>
+  <p><a href="5-1.html">1.회원가입양식</a><br>
+  <a href="5-2.html">2. 수강과목조사 폼양식-1</a><br>
+  <a href="5-3">3.수강과목조사 폼양식-2</a><br>
+  <a href="5-4">4.설문조사 폼양식</a></p>
+ </body>
+</html>

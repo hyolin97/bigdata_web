@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  
+ </head>
+ <body>
+ <script type="text/javascript">
+ var start=new Date();
+ var t1=start.getTime();
+ document.write(t1);
+ </script>
+  
+ </body>
+</html>
