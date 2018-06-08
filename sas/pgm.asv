@@ -1,0 +1,64 @@
+LIBNAME mydata 'C:\전산통계\HW';
+ DATA mydata.inf1;
+INFILE "C:\전산통계\HW\1학년신상정보.txt"  FIRSTOBS=11;
+
+INPUT #1 SSN #2 First $ 11. Middle $ 14-25 Last $ 8. #3 Major $ 5. Gender $ 8-15 #3 ;
+RUN;
+
+DATA mydata.inf2;
+INFILE "C:\전산통계\HW\2학년신상정보.txt" FIRSTOBS=11;
+INPUT #1 SSN #2 First $ 11. Middle $ 14-25 Last $ 8.  #3 Major $ 5. Gender $ 8-15 #3 ;
+
+RUN;
+DATA mydata.inf3;
+INFILE "C:\전산통계\HW\점수정보1.txt" FIRSTOBS=5 ;
+INPUT SSN @14 Total ;
+RUN;
+DATA mydata.inf4;
+INFILE "C:\전산통계\HW\점수정보2.txt" FIRSTOBS=5 ;
+INPUT SSN @14 Total   ;
+
+RUN;
+DATA mydata.ex1;
+SET mydata.inf1 mydata.inf2;
+
+
+RUN;
+DATA mydata.ex2;
+SET mydata.inf4 mydata.inf3;
+
+
+RUN;
+
+DATA mydata.Grade(KEEP=SSN Major Total Gender Grade Fullname);
+MERGE mydata.ex1 mydata.ex2 ;
+
+ if Gender="" then Gender="unknown";
+ if Gender="남자" then Gender="M";
+ if Gender="여자" then Gender="F";
+
+ if SSN IN(342082109,267615672 ,229872244,429155167,585628122,285915791,490922411,469121138,490922411,576639096) then Grade="1";
+ else Grade="2";
+
+ Fullname=First||Middle||Last;
+
+
+
+RUN;
+PROC SORT DATA=mydata.Grade; BY DESCENDING Total;
+RUN;
+
+DATA mydata.NoMajor1st(KEEP=SSN Major Grade Cat) mydata.YesMajor2nd(KEEP=SSN Major Grade Cat1 Cat2);
+
+SET mydata.Grade;
+Cat="No Major OR 1st Grade";
+Cat1="Yes Major";
+Cat2="2nd Major";
+
+IF Grade="1" OR Major="" THEN OUTPUT mydata.NoMajor1st;
+ELSE OUTPUT mydata.YesMajor2nd;
+
+
+RUN;
+
+PROC DATA=mydata.NoMajor1st mydata.YesMajor2nd;

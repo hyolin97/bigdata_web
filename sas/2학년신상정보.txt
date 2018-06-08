@@ -1,0 +1,46 @@
+********************************************************************
+ 첫번째 줄   열  1 -    :  Social Security Number (변수명 = SSN)
+ 두번째 줄   열  1 -    :  First name             (변수명 = First) 
+             열 14 -    :  Middel name            (변수명 = Middle)
+             열 26 -    :  Last name              (변수명 = Last)
+ 세번째 줄   열  1 -    :  전공                   (변수명 = Major)
+             열  8 - 15 :  성별                   (변수명 = Gender)
+********************************************************************
+ <참고> 이 파일에 있는 모든 학생들의 학년은 2학년
+******************************************************************** 
+252346058       
+Ashley       Elizabe     Wood       
+eco    남자      
+212965857       
+Susan        Baker       Malone     
+eco    여자       
+267163723       
+Helen        Kohlme      Sutton     
+stat   남자          
+291355810       
+Russell      Patrick     Lee        
+law    남자              
+488551324       
+Julie        Debor       Roberts    
+math   여자          
+664042615       
+Steven       Alton       Meeks      
+       남자                            
+292935910       
+Mary         Juliett     Aupont     
+law    여자          
+350276785     
+Laurisa      Rae         Rossier    
+eco    남자          
+354256432       
+Charles      Jas         Bittner    
+edu    여자         
+434733093       
+Libby        Huff        Williams   
+stat   여자           
+255535484       
+Michael                  Bender     
+       여자          
+469121138       
+Elea         Christi     Silver	    
+stat   여자           

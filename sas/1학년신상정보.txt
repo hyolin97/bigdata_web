@@ -1,0 +1,34 @@
+********************************************************************
+ 첫번째 줄   열  1 -    :  Social Security Number (변수명 = SSN)
+ 두번째 줄   열  1 -    :  First name             (변수명 = First) 
+             열 14 -    :  Middel name            (변수명 = Middle)
+             열 26 -    :  Last name              (변수명 = Last)
+ 세번째 줄   열  1 -    :  전공                   (변수명 = Major)
+             열  8 - 15 :  성별                   (변수명 = Gender)
+********************************************************************
+ <참고> 이 파일에 있는 모든 학생들의 학년은 1학년
+********************************************************************     
+342082109     
+Amanie       Edmon       Dabit      
+eco               
+267615672     
+Jill         Maret       Daryan	    
+phy    남자     
+229872244     
+Edward       lawre       Dunlap     
+       남자            
+429155167     
+Mark         Jonathan    Avery      
+phy    남자     
+585628122     
+Elea         Christi     Silver     
+eco              
+285915791     
+Noel         Kennin      Arnold     
+edu    여자     
+490922411     
+Christopher              Emerson    
+law    남자                  
+576639096        
+Sonya        Jane        Taylor	  
+law    남자        
