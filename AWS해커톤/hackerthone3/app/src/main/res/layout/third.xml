@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFCCCC"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".secondActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:background="#FFCCCC"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/line3" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:background="#FFCCCC"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button"
+            android:text="구파발역"
+            />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button"
+            android:text="충무로역"
+            />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button"
+            android:text="고속버스터미널역"
+            />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button"
+            android:text="종로3가역"
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView1"
+        android:background="#FFCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/picja1" />
+
+</LinearLayout>
+
+
+

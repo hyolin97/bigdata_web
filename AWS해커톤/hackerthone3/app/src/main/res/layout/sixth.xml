@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#FFCCCC"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fifth">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:background="#FFCCCC"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/line9" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:background="#FFCCCC"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button"
+            android:text="당산역"
+            tools:fontFamily="Berlin Sans FB" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button"
+            android:text="여의도역"
+            tools:fontFamily="Berlin Sans FB" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button"
+            android:text="고속버스터미널역"
+            tools:fontFamily="Berlin Sans FB" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button"
+            android:text="신도림역"
+            tools:fontFamily="Berlin Sans FB" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView1"
+        android:background="#FFCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/picja1" />
+
+</LinearLayout>
+
+
+
