@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C4B73B"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFC19E"
+        android:textSize="80dp"
+        android:textStyle="italic"
+        android:text="Hyolin's videoroom" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_marginTop="40dp"
+            android:id="@+id/takevideoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#C4B73B"
+            app:srcCompat="@drawable/record" />
+
+        <ImageButton
+            android:layout_marginTop="30dp"
+            android:id="@+id/videoViewBtn"
+            android:background="#C4B73B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_weight="1"
+
+            app:srcCompat="@drawable/cloud" />
+        <ImageButton
+            android:layout_marginTop="30dp"
+            android:id="@+id/videoViewBtn2"
+            android:background="#C4B73B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_weight="1"
+
+            app:srcCompat="@drawable/youtube" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

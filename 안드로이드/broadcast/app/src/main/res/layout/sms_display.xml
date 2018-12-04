@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleButton"
+        android:layout_alignParentTop="true"
+        android:text="SMS 발신번호"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll01"
+        android:layout_below="@+id/titleButton"
+        android:layout_above="@+id/closeButton"
+        android:layout_margin="10dp"
+        android:background="#ff222288">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/messageTextView"
+            android:text="SNS 내용"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#ffffffff"/></ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="닫기"
+        android:id="@+id/closeButton"/>
+
+
+</RelativeLayout>
