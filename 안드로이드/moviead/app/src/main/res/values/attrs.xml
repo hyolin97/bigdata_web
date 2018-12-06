@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MovieListView">
+        <attr name="rank" format="reference|string" />
+        <attr name="img_url" format="reference|string" />
+        <attr name="movie_text" format="reference|string" />
+        <attr name="movie_title" format="reference|string"/>
+    </declare-styleable>
+    <declare-styleable name="SeatRow">
+        <attr name="row" format="reference|string"/>
+    </declare-styleable>
+</resources>

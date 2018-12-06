@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layoutstyle_white"
+    android:orientation="vertical">
+
+    <!-- 영화 리스트 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_optimizationLevel="dimensions">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+    <!-- 영화 리스트 -->
+
+    <!-- 포스터 이미지 크게 띄울 부분 -->
+    <LinearLayout
+        android:id="@+id/posterView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp"
+        android:background="@drawable/layoutstyle_white"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="100dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            tools:layout_editor_absoluteY="-8dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:scrollbars="vertical"
+            android:text="TextView"
+            android:textColor="@color/colorDarkRed"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/layoutstyle_white"
+            android:text="자세히 보기"
+            android:textColor="@color/colorDarkRed"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!-- 포스터 이미지 크게 띄울 부분 -->
+
+</android.support.constraint.ConstraintLayout>

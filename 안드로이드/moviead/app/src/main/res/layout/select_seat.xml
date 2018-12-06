@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/layoutstyle_white"
+            android:gravity="center"
+            android:text="SCREEN"
+            android:textColor="@color/colorLighGray"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/layoutstyle_white"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:text="제목"
+                    android:textColor="@color/colorDarkRed"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.example.moviead.SeatRow
+                        android:id="@+id/rowA"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:row="A"></com.example.moviead.SeatRow>
+
+                    <com.example.moviead.SeatRow
+                        android:id="@+id/rowB"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:row="B"></com.example.moviead.SeatRow>
+
+                    <com.example.moviead.SeatRow
+                        android:id="@+id/rowC"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:row="C"></com.example.moviead.SeatRow>
+
+                    <com.example.moviead.SeatRow
+                        android:id="@+id/rowD"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:row="D"></com.example.moviead.SeatRow>
+
+                    <com.example.moviead.SeatRow
+                        android:id="@+id/rowE"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:row="E"></com.example.moviead.SeatRow>
+
+                    <com.example.moviead.SeatRow
+                        android:id="@+id/rowF"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:row="F"></com.example.moviead.SeatRow>
+
+                    <com.example.moviead.SeatRow
+                        android:id="@+id/rowG"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:row="G"></com.example.moviead.SeatRow>
+
+                    <com.example.moviead.SeatRow
+                        android:id="@+id/rowH"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:row="H"></com.example.moviead.SeatRow>
+
+                    <com.example.moviead.SeatRow
+                        android:id="@+id/rowI"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:row="I"></com.example.moviead.SeatRow>
+
+                    <com.example.moviead.SeatRow
+                        android:id="@+id/rowJ"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:row="J"></com.example.moviead.SeatRow>
+
+                    <com.example.moviead.SeatRow
+                        android:id="@+id/rowK"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:row="K"></com.example.moviead.SeatRow>
+
+                    <com.example.moviead.SeatRow
+                        android:id="@+id/rowL"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:row="L"></com.example.moviead.SeatRow>
+
+                    <com.example.moviead.SeatRow
+                        android:id="@+id/rowM"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:row="M"></com.example.moviead.SeatRow>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="6"
+                    android:background="@drawable/layoutstyle_red"
+                    android:text="선택 완료"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
